@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-docker-example",
+  "version": "1.0.0",
+  "description": "Sample project to demonstrate packaging nodejs repo into a debian project",
+  "main": "index.js",
+  "repository": "https://github.com/bisho1995/nodejs-debian-example",
+  "author": "Bisvarup Mukherjee",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "yarn webpack && cp ./index.html ./dist/",
+    "prestart": "rm -rf dist && yarn build",
+    "start": "node dist/index.js",
+    "watch": "NODE_ENV=development webpack"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
