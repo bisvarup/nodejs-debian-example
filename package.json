@@ -11,7 +11,8 @@
     "build": "yarn webpack && cp ./index.html ./dist/",
     "prestart": "rm -rf dist && yarn build",
     "start": "node dist/index.js",
-    "watch": "NODE_ENV=development webpack"
+    "watch": "NODE_ENV=development webpack",
+    "create-debian": "bash scripts/make-debian-file.sh"
   },
   "dependencies": {
     "express": "^4.17.1"
