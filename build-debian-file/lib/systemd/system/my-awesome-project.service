@@ -1,0 +1,12 @@
+[Unit]
+Description=Sample project to demonstrate packaging nodejs repo into a debian project
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /opt/my-awesome-project/start.sh
+WorkingDirectory=/opt/my-awesome-project/
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

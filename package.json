@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-docker-example",
+  "name": "nodejs-debian-example",
   "version": "1.0.0",
   "description": "Sample project to demonstrate packaging nodejs repo into a debian project",
   "main": "index.js",

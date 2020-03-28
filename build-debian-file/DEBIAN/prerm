@@ -1,0 +1,6 @@
+#!/bin/bash
+
+CMD=$1
+if [ $CMD=="remove" ] || [ $CMD=="upgrade" ]; then
+    sudo systemctl stop my-awesome-project
+fi

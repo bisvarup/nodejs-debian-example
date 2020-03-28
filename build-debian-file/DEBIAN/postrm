@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo rm -rf /opt/my-awesome-project/files
