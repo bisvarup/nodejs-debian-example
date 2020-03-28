@@ -4,5 +4,4 @@ Architecture: all
 Section: base
 Priority: standard
 Maintainer: Bisvarup Mukherjee <bisvarup.mukherjee@gmail.com>
-Depends: bash,nodejs
 Description: Sample project to demonstrate packaging nodejs repo into a debian project
