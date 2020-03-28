@@ -4,7 +4,7 @@ LOCAL_DIR=deb
 PACKAGE="my-awesome-project"
 
 # remove folder if present
-[ -d $LOCAL_DIR ] && rm - rf $LOCAL_DIR
+[ -d $LOCAL_DIR ] && rm -rf $LOCAL_DIR
 
 # create the folders in the fake root folder
 mkdir $LOCAL_DIR
